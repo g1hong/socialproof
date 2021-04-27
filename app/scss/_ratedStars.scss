@@ -1,0 +1,20 @@
+.ratedStars {
+  margin: 40px 0 48px 0;
+  display: grid;
+  grid-auto-rows: minmax(78px, auto);
+  row-gap: 16px;
+  &__box {
+    padding: 16px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $lightGrayishMagenta;
+    border-radius: 5px;
+  }
+  &__comment {
+    font-size: 13px;
+    color: $veryDarkMagenta;
+    font-weight: 700;
+  }
+}

@@ -20,6 +20,8 @@ body {
   font-size: $body-font;
   font-weight: 400;
   color: $darkGrayishMagenta;
+  background: url("/images/bg-pattern-top-mobile.svg") no-repeat top,
+    url("/images/bg-pattern-bottom-mobile.svg") no-repeat bottom;
 }
 
 a,
