@@ -10,6 +10,7 @@
   21.04.27)
 
 - git repository 생성 및 업로드
+- mobile(375px) body ~ ratedStars 까지 구현완료
 
 ### 사용 언어
 
