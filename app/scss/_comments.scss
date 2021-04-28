@@ -1,0 +1,46 @@
+.comments {
+  margin: 40px 0 48px 0;
+  display: grid;
+  grid-auto-rows: minmax(250px, auto);
+  row-gap: 16px;
+
+  &__box {
+    padding: 40px 32px 36px 32px;
+    background-color: $veryDarkMagenta;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 20px 20px 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "image name name ."
+      "image level level ."
+      "quotes quotes quotes quotes"
+      "quotes quotes quotes quotes";
+  }
+  &__image {
+    grid-area: image;
+    width: 40px;
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  &__name {
+    grid-area: name;
+    color: $white;
+    font-weight: 700;
+  }
+  &__level {
+    grid-area: level;
+    color: $softPink;
+  }
+  &__quotes {
+    grid-area: quotes;
+    margin-top: 28px;
+    color: $white;
+    font-size: 13px;
+    line-height: 1.5;
+    word-spacing: 1px;
+    letter-spacing: -0.3px;
+  }
+}

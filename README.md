@@ -12,6 +12,10 @@
 - git repository 생성 및 업로드
 - mobile(375px) body ~ ratedStars 까지 구현완료
 
+  21.04.28)
+
+- mobile(375px) 구현완료
+
 ### 사용 언어
 
 - HTML : 시맨틱 HTML5 markup

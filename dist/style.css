@@ -20,7 +20,7 @@ a, a:visited, a:hover { text-decoration: none; }
 
 .attribution a { color: #faa8a8; }
 
-.container { margin: 0 25px; padding: 80px 0 84px 0; }
+.container { margin: 0 23px; padding: 80px 0 84px 0; }
 
 .hero h1 { margin: 0; font-size: 32px; text-align: center; color: #502050; }
 
@@ -31,4 +31,18 @@ a, a:visited, a:hover { text-decoration: none; }
 .ratedStars__box { padding: 16px; display: flex; flex-flow: column; align-items: center; justify-content: space-between; background-color: #f7f2f7; border-radius: 5px; }
 
 .ratedStars__comment { font-size: 13px; color: #502050; font-weight: 700; }
+
+.comments { margin: 40px 0 48px 0; display: grid; grid-auto-rows: minmax(250px, auto); row-gap: 16px; }
+
+.comments__box { padding: 40px 32px 36px 32px; background-color: #502050; border-radius: 5px; display: grid; grid-template-rows: 20px 20px 1fr 1fr; grid-template-columns: repeat(4, 1fr); grid-template-areas: "image name name ." "image level level ." "quotes quotes quotes quotes" "quotes quotes quotes quotes"; }
+
+.comments__image { grid-area: image; width: 40px; }
+
+.comments__image img { width: 100%; border-radius: 50%; }
+
+.comments__name { grid-area: name; color: white; font-weight: 700; }
+
+.comments__level { grid-area: level; color: #ee68a4; }
+
+.comments__quotes { grid-area: quotes; margin-top: 28px; color: white; font-size: 13px; line-height: 1.5; word-spacing: 1px; letter-spacing: -0.3px; }
 /*# sourceMappingURL=style.css.map */
