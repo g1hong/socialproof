@@ -16,6 +16,10 @@
 
 - mobile(375px) 구현완료
 
+  21.04.29)
+
+- desktop(1440px) 구현완료/ 1024px 기준 구현중
+
 ### 사용 언어
 
 - HTML : 시맨틱 HTML5 markup
