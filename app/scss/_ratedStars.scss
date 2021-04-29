@@ -19,3 +19,35 @@
     font-weight: 700;
   }
 }
+@include breakpoint-up(large) {
+  .ratedStars {
+    margin: 16px 2.5rem 16px 0;
+    grid-auto-rows: auto;
+    height: 200px;
+    &__box {
+      width: 400px;
+      flex-flow: row;
+      justify-content: left;
+      &:nth-child(2) {
+        margin: 0 auto;
+      }
+      &:nth-child(3) {
+        margin-left: auto;
+      }
+    }
+    &__stars {
+      margin: 0 16px 0 16px;
+    }
+  }
+}
+@include breakpoint-up(xlarge) {
+  .ratedStars {
+    margin: 16px 0 16px 0;
+    &__box {
+      width: 448px;
+    }
+    &__stars {
+      margin: 0 32px 0 32px;
+    }
+  }
+}

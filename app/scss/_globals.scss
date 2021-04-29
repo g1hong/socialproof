@@ -20,8 +20,21 @@ body {
   font-size: $body-font;
   font-weight: 400;
   color: $darkGrayishMagenta;
-  background: url("/images/bg-pattern-top-mobile.svg") no-repeat top,
-    url("/images/bg-pattern-bottom-mobile.svg") no-repeat bottom;
+  background-image: url("/images/bg-pattern-top-mobile.svg"),
+    url("/images/bg-pattern-bottom-mobile.svg");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+
+  @include breakpoint-up(large) {
+    background-image: url("/images/bg-pattern-top-desktop.svg"),
+      url("/images/bg-pattern-bottom-desktop.svg");
+    background-size: 40%, 85%;
+    background-position: top left, bottom right;
+  }
+  @include breakpoint-up(xlarge) {
+    background-size: 584px, 1085px;
+  }
 }
 
 a,
