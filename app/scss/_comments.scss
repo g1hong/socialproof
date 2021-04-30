@@ -57,6 +57,7 @@
 }
 @include breakpoint-up("large") {
   .comments {
+    margin: 3rem 32px;
     grid-area: comments;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
@@ -72,5 +73,10 @@
         margin-top: 32px;
       }
     }
+  }
+}
+@include breakpoint-up("xlarge") {
+  .comments {
+    margin: 3rem 0;
   }
 }
